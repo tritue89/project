@@ -1,0 +1,77 @@
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ 
+body{
+	background-color:#99ccff;
+
+}
+
+span img{
+	border-radius: 50%
+}
+
+.row p {
+
+	font-weight:bold;
+	font-style:italic;
+}
+
+.row img{
+	height: 120px;
+}
+
+ .navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+ .item {
+	max-height:400px;
+}
+
+			    
+/* Add a gray background color and some padding to the footer */
+footer {
+	background-color: black;
+	color:white;
+	font-style:italic;
+	height: 23px;
+	text-align: center;
+	font-size:90%;
+    margin:auto;
+ }
+.carousel-inner img {
+	width: 100%; /* Set width to 100% */
+	margin: auto;
+	min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+	.carousel-caption {
+	display: none; 
+	
+	}
+
+	
+}
+
+
+ }
+
+ @media only screen and (max-width: 600px){
+ 	.item{
+	max-height:400px;
+ 	}
+
+
+
+}
+
+@media only screen and (max-width: 770px){
+ 	.row img{
+	height:300px;
+ 	}
+
+
+
+}
+		 
