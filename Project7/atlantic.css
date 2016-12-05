@@ -1,0 +1,260 @@
+/*	
+Project Two
+File: atlantic.css
+Date: 6/9/2015
+*/
+
+body{
+	
+	color: #666666;
+	font-family: Arial;
+	background: -webkit-linear-gradient(#FFF, #4F6D93); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF, #4F6D93); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF,#4F6D93); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF, #4F6D93); /* Standard syntax (must be last) */
+	background-repeat: no-repeat;
+}
+
+main{
+	padding: 1px 20px 20px 30px;
+	background-color: #FFF;
+	margin-left: 190px;
+}
+
+#wrapper{
+	width: 80%;
+	margin: auto;
+	background-color: #90C7E3;
+	min-width: 960px;
+	max-width: 2048px;
+	box-shadow: 3px 3px 3px #333;
+	
+}
+
+
+
+header{
+	background-color: #000033;
+	background-image: url('images/sunset.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	color: #FFFFFF;
+	
+	height: 60px;
+	text-align: center;
+	padding-top: 15px;
+	
+}
+
+main ul li{
+	list-style-image: url('images/marker.gif');
+}
+
+nav{
+
+	font-weight: bold;
+	float: left;
+	width: 160px;
+	padding : 20px;
+	
+}
+
+nav ul{
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+nav a {
+	text-decoration: none;
+}
+nav a:link{
+	color: #000033;
+}
+nav a:visited{
+	color: #344873;
+}
+
+nav a:hover{
+	color: #FFF;
+}
+
+footer{
+	font-size: 75%;
+	font-style: italic;
+	text-align: center;
+	font-family: Times New Roman;
+	padding: 20px;
+	background: #FFF;
+}
+
+h1{
+	font-family: Times New Roman;
+	margin-top: 0px;
+}
+
+h2{
+	color: #3399CC;
+	font-family: Times New Roman;
+	text-shadow: 1px 1px #CCC;
+
+}
+
+dt{
+	color: #000033;
+	font-weight: bold;
+}
+
+#main-image{
+	background-image: url('images/coast-main.jpg');
+	height: 300px;
+	margin-left: 190px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#accommodations-image{
+	background-image: url('images/bungalow-main.jpg');
+	height: 300px;
+	margin-left: 190px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#activities-image{
+	background-image: url('images/trail-main.jpg');
+	height: 300px;
+	margin-left: 190px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.resort{
+	color: #5C7FA3;
+	font-weight: bold;
+}
+
+#contact{
+	font-size: 90%;
+}
+
+th, td {
+
+	border: 2px solid #0099FF;
+	
+}
+
+table {
+	width: 80%;
+	margin: auto;
+	border-collapse: collapse;
+	
+}
+
+
+th {
+	background-color: #000066;
+	color: white;
+}
+
+td{
+	text-align: center;
+}
+
+/* Label styles */
+
+label {
+   clear: left;
+   display: vertical-align;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 4% 7px 5px;
+   width: 15%;
+}
+
+/* Input control styles */
+
+input {
+   display: block;
+   font-size: 0.9em;
+  margin: 7px 4% 12px 5px;
+ 
+}
+
+
+/* Text area styles */
+
+textarea {
+   display: block;
+   font-size: 0.9em;
+
+   height: 30px;
+   margin: 10px 0px;
+   width: 150px;
+}
+
+input[type="submit"]  {
+   display: block;
+   float: none;
+   text-align: center;
+   background-color:#90C7E3;
+   color:  #000033;
+   font-weight: bold;
+  
+}
+
+fieldset{
+	border: 1px solid #5C7FA3;
+	box-shadow: 3px 3px 3px #333;
+
+}
+
+#gallery { 
+	list-style : none;
+	
+}
+
+
+
+	
+}
+
+figure{
+	display: inline;
+}
+
+/* Responsive Design */
+
+/*Tablet version*/
+@media only screen and (max-width: 64em ) {
+	body { margin: 0; background-color: #FFF;}
+	#wrapper{min-width: 0; width: auto; box-shadow: none;}
+	main{ margin-left: 0;}
+	nav{ float: none; width: auto; text-align: center; padding: 0.5em;}
+	nav  a { display: inline; padding: 0.25em 0.75em 0.25em 0.75em;}
+	#main-image{ margin-left:0; height: 200px;}
+	#accommodations-image{ margin-left:0; height: 200px;}
+	#activities-image{ margin-left:0; height: 200px;}
+	
+}
+
+/*Mobile phone version*/
+@media only screen and (max-width: 37.5em ){
+
+	header{ padding-top: 1em;}
+	main{ padding: 0.1em 1em 0.1em 1em; font-size: 90%;}
+	h1{ font-size: 1.5em;}
+	nav a{ display: block; margin:-2px -7px -2px -7px ;border-bottom: 1.4px solid #330000;}
+	#main-image{ background-image:none; height: 0;}
+	#accommodations-image{ background-image:none; height:0;}
+	#activities-image{ background-image:none; height: 0;}
+	table {display: none;}
+	span p{display:none;}
+	label {float:none;}
+}
+
+
+@media only screen and (min-width: 37.5em ){
+	 span a{ display: none;}
+ 
+}
